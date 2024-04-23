@@ -1,4 +1,3 @@
-
 const data = JSON.parse(localStorage.getItem('dayStarData'));
 
 const form = document.getElementById("submit-form-baby");
@@ -33,8 +32,8 @@ form.addEventListener('submit', (e) => {
             }
         )
     }else{
-        console.log('please fill ou the names section')
+        console.log('please fill out the names section')
     }
     localStorage.setItem('dayStarData',JSON.stringify(data));
-    window.location.replace('../dashboard/admin-dashboard.html');
+    window.location.replace('/ADMIN/admin-dash/Admin-dash.html');
 })
