@@ -1,70 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <link rel="stylesheet" href="boot.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="form-box">
+    <link rel="stylesheet" href="register.css" />
+    <style>
+        /* Navbar styles */
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+        .navbar a:hover {
+            color: #ff0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</div>
+
+<div class="container">
+    <div class="form-box">
         <form id="Fillform" action="#">
-          <h2>Add New Staff</h2>
-          <p id="result"></p>
+            <h2>Add New Staff</h2>
+            <p id="result"></p>
 
-          <div class="input-box">
-            <input
-              type="text"
-              id="fullName"
-              name="fullName"
-              placeholder="enter name"
-            />
-          </div>
+            <div class="input-box">
+                <input type="text" id="fullName" name="fullName" placeholder="enter name" />
+            </div>
 
-          <div class="input-box">
-            <input
-              type="text"
-              id="department"
-              name="department"
-              placeholder="enter department"
-            />
-          </div>
+            <div class="input-box">
+                <input type="text" id="department" name="department" placeholder="enter department" />
+            </div>
 
+            <div class="input-box">
+                <input type="text" id="email" name="email" placeholder="enter email" />
+            </div>
 
-          <div class="input-box">
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="enter email"
-            />
-          </div>
+            <div class="input-box">
+                <input type="text" id="contact" name="contact" placeholder="enter contact" />
+            </div>
 
-          <div class="input-box">
-            <input type="text" id="contact" name="contact" placeholder="enter contact" />
-          </div>
+            <div class="input-box">
+                <input type="text" id="role" name="role" placeholder="enter role" />
+            </div>
 
-          <div class="input-box">
-            <input
-              type="text"
-              id="role"
-              name="role"
-              placeholder="enter role"
-            />
-          </div>
-
-          <div class="button">
-            <input
-              type="submit"
-              class="btn"
-              onclick="register()"
-              id="Register"
-            />
-          </div>
+            <div class="button">
+                <input type="submit" class="btn" onclick="register()" id="Register" />
+            </div>
         </form>
-      </div>
     </div>
-    <script src="babyReg.js"></script>
-  </body>
+</div>
+
+<script src="babyReg.js"></script>
+</body>
 </html>
